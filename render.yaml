@@ -1,0 +1,14 @@
+# Render "Blueprint": creates the whole site from this repository.
+services:
+  - type: web
+    name: livestock-health
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: SEED_DEMO          # re-creates the demo data every time the free server wakes up
+        value: "true"
+      - key: IOT_DEMO_SIMULATOR  # keeps 3 demo collars sending data so the IoT screens look alive
+        value: "true"

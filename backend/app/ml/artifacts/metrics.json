@@ -1,0 +1,187 @@
+{
+  "model_version": "v1",
+  "trained_at": "2026-11-24T15:11:44.796693+00:00",
+  "synthetic_data": true,
+  "n_rows": 6000,
+  "models": {
+    "Logistic Regression": {
+      "cv_macro_f1": 0.9124,
+      "test_accuracy": 0.9092,
+      "test_macro_f1": 0.9091
+    },
+    "Random Forest": {
+      "cv_macro_f1": 0.9103,
+      "test_accuracy": 0.9083,
+      "test_macro_f1": 0.9082
+    },
+    "Gradient Boosting": {
+      "cv_macro_f1": 0.8972,
+      "test_accuracy": 0.895,
+      "test_macro_f1": 0.8948
+    }
+  },
+  "chosen_model": "Logistic Regression",
+  "final": {
+    "accuracy": 0.905,
+    "macro_precision": 0.9058,
+    "macro_recall": 0.9051,
+    "macro_f1": 0.9049,
+    "per_class": {
+      "bef": {
+        "precision": 0.8523489932885906,
+        "recall": 0.8639455782312925,
+        "f1-score": 0.8581081081081081,
+        "support": 147.0
+      },
+      "fmd": {
+        "precision": 0.8733333333333333,
+        "recall": 0.8675496688741722,
+        "f1-score": 0.8704318936877077,
+        "support": 151.0
+      },
+      "healthy": {
+        "precision": 0.8950617283950617,
+        "recall": 0.9602649006622517,
+        "f1-score": 0.9265175718849841,
+        "support": 151.0
+      },
+      "lsd": {
+        "precision": 0.8782051282051282,
+        "recall": 0.9133333333333333,
+        "f1-score": 0.8954248366013072,
+        "support": 150.0
+      },
+      "mastitis": {
+        "precision": 0.9251700680272109,
+        "recall": 0.918918918918919,
+        "f1-score": 0.9220338983050848,
+        "support": 148.0
+      },
+      "parasites": {
+        "precision": 0.9568345323741008,
+        "recall": 0.869281045751634,
+        "f1-score": 0.910958904109589,
+        "support": 153.0
+      },
+      "pox": {
+        "precision": 0.9285714285714286,
+        "recall": 0.9662162162162162,
+        "f1-score": 0.9470198675496688,
+        "support": 148.0
+      },
+      "ppr": {
+        "precision": 0.9370629370629371,
+        "recall": 0.881578947368421,
+        "f1-score": 0.9084745762711864,
+        "support": 152.0
+      },
+      "accuracy": 0.905,
+      "macro avg": {
+        "precision": 0.9058235186572239,
+        "recall": 0.90513607616953,
+        "f1-score": 0.9048712070647045,
+        "support": 1200.0
+      },
+      "weighted avg": {
+        "precision": 0.906030597457152,
+        "recall": 0.905,
+        "f1-score": 0.9048998266267128,
+        "support": 1200.0
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "bef",
+        "fmd",
+        "healthy",
+        "lsd",
+        "mastitis",
+        "parasites",
+        "pox",
+        "ppr"
+      ],
+      "matrix": [
+        [
+          127,
+          7,
+          0,
+          8,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          10,
+          131,
+          0,
+          2,
+          4,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          2,
+          145,
+          0,
+          1,
+          2,
+          1,
+          0
+        ],
+        [
+          6,
+          2,
+          0,
+          137,
+          3,
+          1,
+          1,
+          0
+        ],
+        [
+          3,
+          0,
+          5,
+          2,
+          136,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          3,
+          12,
+          4,
+          1,
+          133,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          143,
+          2
+        ],
+        [
+          2,
+          5,
+          0,
+          2,
+          0,
+          2,
+          7,
+          134
+        ]
+      ]
+    }
+  }
+}

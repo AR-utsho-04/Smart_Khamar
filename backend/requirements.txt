@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+sqlalchemy>=2.0
+pydantic>=2.0
+python-multipart
+PyJWT
+bcrypt
+apscheduler>=3.10,<4
+scikit-learn
+pandas
+numpy
+joblib
+reportlab
+python-dotenv
+pytest
+httpx

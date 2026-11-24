@@ -1,0 +1,18 @@
+{
+  "version": "iot-v1",
+  "trained_at": "2026-11-24T15:11:47.867091+00:00",
+  "synthetic_data": true,
+  "algorithm": "Isolation Forest (200 trees) + signal rules + critical-vitals rules + persistence (3 of last 5)",
+  "train_readings": 60480,
+  "eval_readings": 120960,
+  "threshold": -0.5943,
+  "reading_precision": 0.466,
+  "reading_recall": 0.883,
+  "reading_f1": 0.61,
+  "episodes": 136,
+  "episodes_detected": 124,
+  "episode_detection_rate": 0.912,
+  "limitations": "Low activity at night cannot be told apart from normal sleep, so lethargy is mainly detected in the daytime.",
+  "false_alerts": 16,
+  "false_alerts_per_animal_week": 0.133
+}
