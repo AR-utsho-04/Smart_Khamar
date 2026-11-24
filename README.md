@@ -165,18 +165,6 @@ Frontend| http://127.0.0.1:5173
 Backend API| http://127.0.0.1:8000
 API Documentation| http://127.0.0.1:8000/docs
 
----
-
-🔐 Demo Accounts
-
-The development version provides the following demo accounts:
-
-Role| Email| Password
-Farmer| farmer@demo.com| Password123!
-Veterinarian| vet@demo.com| Password123!
-Admin| admin@demo.com| Password123!
-
-These credentials are intended for local demonstration only. Change or disable demo credentials before production deployment.
 
 ---
 
